@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-<head>
+<!-- saved from url=(0071)https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Findex-fluid.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <title>My First Bitstarter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">    
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
-    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
+    <link href="./index_files/css" rel="stylesheet" type="text/css">
+    <link href="./index_files/css(1)" rel="stylesheet" type="text/css">
     <style type="text/css">
 
       /* Large desktop */
@@ -96,36 +96,36 @@
       .footer a {
         color: #ccccff;
       }
-      #textDesc1, #textDesc2 {
-        vertical-align: middle;
-      }
     </style>
   </head>
+  <body style="">
 
-  <body>
-
-    <!-- Navbar -->
-   <div class="navbar navbar-inverse navbar-fixed-top">
+    <!-- Mobile-friendly navbar adapted from example. -->
+    <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-	  <button type="button" class="btn btn-navbar"
-		  data-toggle="collapse" data-target=".nav-collapse">
-	    <span class="icon-bar"></span>
-	    <span class="icon-bar"></span>
-	    <span class="icon-bar"></span>
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
           </button>
-	  <a class="brand" href="#">Bitstarter</a>
-	  <div class="nav-collapse collapse"> 
-	    <ul class="nav">
-	      <li class="active"><a href="#">Home</a></li>
-	      <li><a href="#about">About</a></li>
-	      <li><a href="#contact">Contact</a></li>
-	    </ul>  
-	  </div>
-	</div>  
+          <a class="brand" href="#">Bitstarter</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
       </div>
-    </div>  
-<div class="container">
+    </div>
+
+    <!-- We use row-fluid inside containers to achieve a resizable layout. -->
+    <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
+    <!-- http://stackoverflow.com/a/12270322 -->
+    <div class="container">
       <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
       <!-- www.google.com/fonts/specimen/Ubuntu -->
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
@@ -143,13 +143,14 @@
       </div>
       <div class="row-fluid pitch">
         <div class="span5 offset1 video">
-          <img class="img-polaroid" src="https://lh6.googleusercontent.com/-Mvk7vwwMXDs/Uf4DOzkurNI/AAAAAAAAAC4/BZBOYZB87RE/w480-h300-no/icon.png">
+          <img class="img-polaroid" alt="Placeholder" src="https://lh6.googleusercontent.com/-Mvk7vwwMXDs/Uf4DOzkurNI/AAAAAAAAAC4/BZBOYZB87RE/w480-h300-no/icon.png">
         </div>
 
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
         <div class="span5 actions">
+          <div class="row-fluid">
           <div class="span8 offset2">
-            <div class="statistics">
+            <div class="row-fluid statistics">
               <div class="span4">
                 <!-- linediv-l and linediv-r give dividing lines that look
                 different in horizontal and vertical layouts, illustrating
@@ -170,6 +171,7 @@
               </div>
             </div>
           </div>
+          <div class="row-fluid">
           <div class="span10 offset1">
             <!-- Bootstrap progress bar -->
             <!-- http://twitter.github.io/bootstrap/components.html#progress -->
@@ -178,17 +180,23 @@
               <div class="bar bar-warning" style="width: 40%;"></div>
             </div>
           </div>
+          </div>
+          <div class="row-fluid">
           <div class="span6 offset3 order">
             <!-- Standard Bootstrap button. -->
             <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
             <button class="btn btn-success btn-large">Preorder</button>
           </div>
+          </div>
+          <div class="row-fluid">
           <div class="span8 offset2 social">
             <!-- Social buttons are not included in default Bootstrap. -->
             <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
             <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
             <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
           </div>
+          </div>
+        </div>
         </div>
       </div>
 
@@ -198,29 +206,27 @@
       <!-- http://placehold.it -->
       <div class="row-fluid section1">
         <div class="span5 offset1 asset">
-          <img class="img-polaroid" src="http://thumbs.dreamstime.com/z/soccer-betting-21228541.jpg">
+          <img class="img-polaroid" alt="Placeholder" src="http://thumbs.dreamstime.com/z/soccer-betting-21228541.jpg">
         </div>
-        <div class="span5 copy" id="textDesc1" >
+        <div class="span5 copy">
           <p>
-	    <b>BetPre</b> is a sports statistics website. It offers you a review of the 
-	    event ahead and how patters of earlier results might influence it.
-	    If you`re not inspired or don`t know what to bet on, get a list
-	    with the most interesting statistics of the event. 
-	    <p>
-	    Style of competitors rarely changes when facing opponents of the same calibre. 
-	    We know sports is attractive because of surprises, but sometimes figures 
-	    don`t lie. Knowing the figures, will prepares you for the event ahead. 
-	    </p>
-
-
+	        <b>BetPre</b> is a sports statistics website. It offers you a review of the 
+		    event ahead and how patters of earlier results might influence it.
+		    If you`re not inspired or don`t know what to bet on, get a list
+		    with the most interesting statistics of the event. 
+		    <p>
+	              Style of competitors rarely changes when facing opponents of the same calibre. 
+		      We know sports is attractive because of surprises, but sometimes figures 
+		      don`t lie. Knowing the figures, will prepares you for the event ahead. 
+		    </p>
           </p>
         </div>
       </div>
 
       <div class="row-fluid section2">
-        <div class="span5 offset1 copy copy-right" id="textDesc2" >
+        <div class="span5 offset1 copy copy-right">
           <p>
-	    <b>BetPre</b> keeps you well informed so you can have a better understanding on the event ahead.
+            <b>BetPre</b> keeps you well informed so you can have a better understanding on the event ahead.
 	    Built for gamblers, by gamblers, this tool will give an insight
 	    on how opponents behave in the game. You will receive an email prior to the starting point of the
 	    event. You will also be able to comment on the event and see the odds for it.
@@ -228,7 +234,7 @@
           </p>
         </div>
         <div class="span5 asset">
-          <img class="img-polaroid" src="http://thumbs.dreamstime.com/z/roulette-wheel-5227075.jpg">
+          <img class="img-polaroid" alt="Placeholder" src="http://thumbs.dreamstime.com/z/roulette-wheel-5227075.jpg">
         </div>
       </div>
 
@@ -242,12 +248,12 @@
               <div class="accordion-group">
                 <div class="accordion-heading">
                   <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                    What is BetPre?
+		    What is BetPre?
                   </a>
                 </div>
                 <div id="collapseOne" class="accordion-body collapse">
                   <div class="accordion-inner">
-                    BetPre is a sports statistics website.
+		    BetPre is a sports statistics website.
                   </div>
                 </div>
               </div>
@@ -280,6 +286,6 @@
         </div>
       </div>
     </div>
-  </body>
+  
 
-</html>
+</body></html>
